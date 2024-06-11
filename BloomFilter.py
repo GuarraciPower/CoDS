@@ -10,16 +10,18 @@ class BloomFilter:
         self.get_hash_secondary = HashFunctions.hash_int32_shift
 
     def add(self, item):
-        primary_hash = HashFunctions.hash_int32_jenkins(item)
-        secondary_hash = self.get_hash_secondary(item)
+        item_hash = HashFunctions.hash_string(item)
+        primary_hash = HashFunctions.hash_int32_jenkins(item_hash)
+        secondary_hash = self.get_hash_secondary(item_hash)
 
         for i in range(1, self.hash_function_count + 1):
             combined_hash = (primary_hash + i * secondary_hash) % self.size
             self.bitset.add(combined_hash)
 
     def contains(self, item):
-        primary_hash = HashFunctions.hash_int32_jenkins(item)
-        secondary_hash = self.get_hash_secondary(item)
+        item_hash = HashFunctions.hash_string(item)
+        primary_hash = HashFunctions.hash_int32_jenkins(item_hash)
+        secondary_hash = self.get_hash_secondary(item_hash)
 
         for i in range(1, self.hash_function_count + 1):
             combined_hash = (primary_hash + i * secondary_hash) % self.size
@@ -35,9 +37,11 @@ class BloomFilter:
     @staticmethod
     def _best_k(capacity, error_rate):
         import math
-        return int((BloomFilter._best_m(capacity, error_rate) / capacity) * math.log(2))
+        return int((BloomFilter._best_m(capacity, error_rate) / capacity) *
+                   math.log(2))
 
     @staticmethod
     def error_rate(capacity, size, hash_function_count):
         import math
-        return (1 - math.exp(-hash_function_count * capacity / size)) ** hash_function_count
+        return (1 - math.exp(-hash_function_count * capacity / size)) ** \
+            hash_function_count

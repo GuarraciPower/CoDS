@@ -28,6 +28,7 @@ def benchmark_bloom_filter(capacity, error_rate, num_elements):
     start_mem = memory_usage_psutil()
     start_cpu = cpu_usage_psutil()
 
+    # Adding elements to BloomFilter
     for _ in range(num_elements):
         bf.add(random_string())
 
@@ -43,6 +44,7 @@ def benchmark_bloom_filter(capacity, error_rate, num_elements):
     start_mem = memory_usage_psutil()
     start_cpu = cpu_usage_psutil()
 
+    # Checking elements in BloomFilter
     false_positives = 0
     for _ in range(num_elements):
         if bf.contains(random_string()):
@@ -64,9 +66,10 @@ def benchmark_bloom_filter(capacity, error_rate, num_elements):
 
 
 if __name__ == "__main__":
-    capacity = 10000
+    capacity = 10**8
     error_rate = 0.01
-    num_elements = 1000
+    num_elements = 10**7
 
-    print(f"Benchmarking Bloom Filter with capacity {capacity}, error rate {error_rate}, and {num_elements} elements.")
+    print(f"Benchmarking Bloom Filter with capacity {capacity}, "
+          f"error rate {error_rate}, and {num_elements} elements.")
     benchmark_bloom_filter(capacity, error_rate, num_elements)
