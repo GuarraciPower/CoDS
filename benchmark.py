@@ -66,9 +66,9 @@ def benchmark_bloom_filter(capacity, error_rate, num_elements):
 
 
 if __name__ == "__main__":
-    capacity = 10**8
+    capacity = 10 ** 8
     error_rate = 0.01
-    num_elements = 10**7
+    num_elements = 10 ** 7
 
     print(f"Benchmarking Bloom Filter with capacity {capacity}, "
           f"error rate {error_rate}, and {num_elements} elements.")
