@@ -35,7 +35,7 @@ class BloomFilter:
     @staticmethod
     def _best_k(capacity, error_rate):
         import math
-        return int((self._best_m(capacity, error_rate) / capacity) * math.log(2))
+        return int((BloomFilter._best_m(capacity, error_rate) / capacity) * math.log(2))
 
     @staticmethod
     def error_rate(capacity, size, hash_function_count):
