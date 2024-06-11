@@ -1,7 +1,5 @@
-# CoDS
-Project Concepts of Data Science
-
-Description
+# Project Concepts of Data Science
+## Description:
 The purpose of the project is the implementation of a Bloom filter. The concept of
 this data structure was explained in the third session of the course. You can find
 additional information on this data structure online, for instance on Wikipedia.
