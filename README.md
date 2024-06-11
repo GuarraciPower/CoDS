@@ -1,5 +1,5 @@
 # Project Concepts of Data Science
-## Description:
+**Description:**
 The purpose of the project is the implementation of a Bloom filter. The concept of
 this data structure was explained in the third session of the course. You can find
 additional information on this data structure online, for instance on Wikipedia.
@@ -35,7 +35,7 @@ large data sample. Time the insert and search functions for an increasing
 number of words and create plots. These benchmarks should be
 performed on the HPC infrastructure. Include the job script and the Python
 test script in your repository, as well as the output of the benchmark runs.
-Consult the [VSC documentation] (https://docs.vscentrum.be/) if necessary.
+Consult the [VSC documentation](https://docs.vscentrum.be/) if necessary.
 7. Check how the false positive rate changes as a function of the number of
 words inserted in the Bloom filter. Also check this if the number of words
 exceeds the expected number of words for which the Bloom filter was
