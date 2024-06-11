@@ -1,5 +1,5 @@
-# Project Concepts of Data Science
-**Description:**
+# Concepts of Data Science
+## Project overview
 
 The purpose of the project is the implementation of a Bloom filter. The concept of
 this data structure was explained and additional information on this data structure 
@@ -34,3 +34,53 @@ can be found online, for instance on [Wikipedia](https://en.wikipedia.org/wiki/B
     designed.
 8. Checks on the compression rate of the Bloom filter as a function of the expected
     number of and the rate of false positives should also be implemented.
+
+# Bloom Filter Implementation
+
+## Description
+
+This project implements a Bloom Filter in Python. A Bloom Filter is a probabilistic 
+data structure that allows for efficient set membership checks with a configurable 
+false positive rate.
+
+## Files
+
+- `BitSet.py`: Implements the BitSet class to handle the bit array.
+- `HashFunctions.py`: Provides various hash functions used by the Bloom Filter.
+- `BloomFilter.py`: The main Bloom Filter implementation.
+- `benchmark.py`: Script to benchmark the Bloom Filter implementation.
+
+## Usage
+
+To use the Bloom Filter, import the `BloomFilter` class from `BloomFilter.py` and 
+create an instance with desired capacity and error rate.
+
+## Testing
+
+Tests are provided to verify the correctness of the Bloom Filter and hash functions.
+
+## Benchmarking
+
+The `benchmark.py` script benchmarks the performance of the Bloom Filter by measuring 
+time, memory, and CPU usage.
+
+## Time and Space Complexity
+
+- **Time Complexity**: O(k) for insert and lookup operations, where k is the number of 
+                        hash functions.
+- **Space Complexity**: O(m) for the bit array, where m is the size of the bit array.
+
+## Performance Testing
+
+Performance tests include adding and checking elements in the Bloom Filter and measuring 
+the false positive rate and compression rate.
+
+## Conclusion
+
+TBD
+
+## Future Work
+
+- Further optimization of hash functions.
+- Extended performance tests on different datasets.
+- Integration with Jupyter notebooks for demonstration purposes.
