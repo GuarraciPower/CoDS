@@ -15,7 +15,8 @@ class TestBloomFilter(unittest.TestCase):
         bf = BloomFilter(1000, 0.01)
         for i in range(500):
             bf.add(f"item{i}")
-        false_positives = sum(1 for i in range(500, 1000) if bf.contains(f"item{i}"))
+        false_positives = sum(1 for i in range(500, 1000)
+                              if bf.contains(f"item{i}"))
         self.assertLess(false_positives, 50)  # Expecting < 5% false positives
 
     def test_hash_functions(self):
