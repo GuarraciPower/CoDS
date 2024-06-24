@@ -1,0 +1,135 @@
+Bloom Filter Size: 1000
+Number of Hash Functions: 3
+Insertion Time (seconds): 0.10351204872131348
+Search Time (seconds): 0.10275101661682129
+Insertion Memory Usage (MB): 0.765625
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
+Bloom Filter Size: 1000
+Number of Hash Functions: 5
+Insertion Time (seconds): 0.10419416427612305
+Search Time (seconds): 0.10351371765136719
+Insertion Memory Usage (MB): 0.32421875
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
+Bloom Filter Size: 1000
+Number of Hash Functions: 7
+Insertion Time (seconds): 0.10478901863098145
+Search Time (seconds): 0.10411286354064941
+Insertion Memory Usage (MB): 0.32421875
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
+Bloom Filter Size: 5000
+Number of Hash Functions: 3
+Insertion Time (seconds): 0.11222362518310547
+Search Time (seconds): 0.11130857467651367
+Insertion Memory Usage (MB): 0.0859375
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
+Bloom Filter Size: 5000
+Number of Hash Functions: 5
+Insertion Time (seconds): 0.11514139175415039
+Search Time (seconds): 0.11420679092407227
+Insertion Memory Usage (MB): 0.26953125
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
+Bloom Filter Size: 5000
+Number of Hash Functions: 7
+Insertion Time (seconds): 0.11852240562438965
+Search Time (seconds): 0.11758899688720703
+Insertion Memory Usage (MB): 0.08203125
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
+Bloom Filter Size: 10000
+Number of Hash Functions: 3
+Insertion Time (seconds): 0.12208724021911621
+Search Time (seconds): 0.12163543701171875
+Insertion Memory Usage (MB): 0.0234375
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
+Bloom Filter Size: 10000
+Number of Hash Functions: 5
+Insertion Time (seconds): 0.12896466255187988
+Search Time (seconds): 0.12799406051635742
+Insertion Memory Usage (MB): 0.08984375
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
+Bloom Filter Size: 10000
+Number of Hash Functions: 7
+Insertion Time (seconds): 0.1353452205657959
+Search Time (seconds): 0.13413214683532715
+Insertion Memory Usage (MB): 0.08984375
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
+Bloom Filter Size: 50000
+Number of Hash Functions: 3
+Insertion Time (seconds): 0.20776724815368652
+Search Time (seconds): 0.20541167259216309
+Insertion Memory Usage (MB): 1.21875
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
+Bloom Filter Size: 50000
+Number of Hash Functions: 5
+Insertion Time (seconds): 0.24045205116271973
+Search Time (seconds): 0.2381575107574463
+Insertion Memory Usage (MB): 0.1015625
+Search Memory Usage (MB): 1.18359375
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): -10.0
+
+Bloom Filter Size: 50000
+Number of Hash Functions: 7
+Insertion Time (seconds): 0.27176761627197266
+Search Time (seconds): 0.2704920768737793
+Insertion Memory Usage (MB): 1.21484375
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
+Bloom Filter Size: 100000
+Number of Hash Functions: 3
+Insertion Time (seconds): 0.31357836723327637
+Search Time (seconds): 0.3088722229003906
+Insertion Memory Usage (MB): 0.640625
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
+Bloom Filter Size: 100000
+Number of Hash Functions: 5
+Insertion Time (seconds): 0.3789207935333252
+Search Time (seconds): 0.3757174015045166
+Insertion Memory Usage (MB): 0.640625
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
+Bloom Filter Size: 100000
+Number of Hash Functions: 7
+Insertion Time (seconds): 0.44364094734191895
+Search Time (seconds): 0.43868303298950195
+Insertion Memory Usage (MB): 0.640625
+Search Memory Usage (MB): 0.0
+Insertion CPU Usage (%): 0.0
+Search CPU Usage (%): 0.0
+
