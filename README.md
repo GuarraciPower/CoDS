@@ -163,12 +163,12 @@ This project demonstrates the implementation and analysis of a Bloom Filter, cov
 
 ### Summary of Graphs and Conclusions
 
-1. **False Positive Rate Analysis (Question 7)**:
+1. **False Positive Rate Analysis**:
    - **Graph**: The false positive rate as a function of the number of words inserted.
    - **Conclusion**: As expected, the false positive rate increases as the number of elements exceeds the designed capacity of the Bloom Filter. The hash functions performed consistently across different data types, but the rate of increase in false positives varied slightly depending on the data type.
    - ![False Positive Rate for Bloom Filters (DNA Sequences)](results/false_positive_rate_over_time.png)
 
-2. **Compression Rate Analysis (Question 8)**:
+2. **Compression Rate Analysis**:
    - **Graph 1**: Compression rate as a function of the expected number of false positives.
    - **Graph 2**: Compression rate as a function of the observed rate of false positives.
    - **Conclusion**: The compression rate was shown to be directly influenced by the expected false positive rate. As the expected false positive rate increased, the compression rate decreased, indicating a higher utilization of the bit array. The observed false positive rate graphs further confirmed this trend, showcasing the balance between space efficiency and accuracy.
