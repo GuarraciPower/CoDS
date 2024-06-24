@@ -163,33 +163,33 @@ This project demonstrates the implementation and analysis of a Bloom Filter, cov
 
 ### Summary of Graphs and Conclusions
 
-1. **False Positive Rate Analysis (Question 7)**:
+1. **False Positive Rate Analysis**:
    - **Graph**: The false positive rate as a function of the number of words inserted.
    - **Conclusion**: As expected, the false positive rate increases as the number of elements exceeds the designed capacity of the Bloom Filter. The hash functions performed consistently across different data types, but the rate of increase in false positives varied slightly depending on the data type.
-   - ![False Positive Rate for Bloom Filters (DNA Sequences)](path/to/DNA Sequences_bloom_filter_false_positive_rate.png)
+   - ![False Positive Rate for Bloom Filters (DNA Sequences)](results/false_positive_rate_over_time.png)
 
-2. **Compression Rate Analysis (Question 8)**:
+2. **Compression Rate Analysis**:
    - **Graph 1**: Compression rate as a function of the expected number of false positives.
    - **Graph 2**: Compression rate as a function of the observed rate of false positives.
    - **Conclusion**: The compression rate was shown to be directly influenced by the expected false positive rate. As the expected false positive rate increased, the compression rate decreased, indicating a higher utilization of the bit array. The observed false positive rate graphs further confirmed this trend, showcasing the balance between space efficiency and accuracy.
-   - ![Compression Rate vs Expected False Positives](path/to/compression_rate_vs_expected_false_positives.png)
-   - ![Compression Rate vs Observed False Positives](path/to/compression_rate_vs_observed_false_positives.png)
+   - ![Compression Rate vs Expected False Positives](results/compression_rate_vs_expected_false_positives.png)
+   - ![Compression Rate vs Observed False Positives](results/compression_rate_vs_observed_false_positives.png)
 
 3. **Performance Benchmarks**:
-   - **Graph 1**: Add time for different algorithms (DNA Sequences).
-   - **Graph 2**: Search time for different algorithms (DNA Sequences).
+   - **Graph 1**: Add time for different algorithms (Natural Language Words).
+   - **Graph 2**: Search time for different algorithms (Natural Language Words).
    - **Conclusion**: The Bloom Filter outperformed traditional data structures like linear search, BST, and AVL trees in terms of space efficiency and query speed, particularly as the dataset size increased. The hash functions showed consistent performance, with Murmur and CityHash being slightly more efficient in terms of distribution and speed.
-   - ![Add Time for Algorithms (DNA Sequences)](path/to/DNA Sequences_algorithms_add_time.png)
-   - ![Search Time for Algorithms (DNA Sequences)](path/to/DNA Sequences_algorithms_search_time.png)
+   - ![Add Time for Algorithms (DNA Sequences)](results/Natural%20Language%20Words_algorithms_add_time.png)
+   - ![Search Time for Algorithms (DNA Sequences)](results/Natural%20Language%20Words_algorithms_search_time.png)
 
 4. **Hash Function Performance**:
    - **Graph 1**: Hash distribution for CityHash (DNA Sequences).
    - **Graph 2**: Hash distribution for Jenkins (DNA Sequences).
    - **Graph 3**: Hash distribution for Murmur (DNA Sequences).
    - **Conclusion**: The hash functions were analyzed for their distribution properties. CityHash and Murmur showed a more uniform distribution compared to Jenkins, making them more suitable for use in the Bloom Filter.
-   - ![City Hash Distribution (DNA Sequences)](path/to/dna_sequences_-_city_hash_distribution.png)
-   - ![Jenkins Hash Distribution (DNA Sequences)](path/to/dna_sequences_-_jenkins_hash_distribution.png)
-   - ![Murmur Hash Distribution (DNA Sequences)](path/to/dna_sequences_-_murmur_hash_distribution.png)
+   - ![City Hash Distribution (DNA Sequences)](results/dna_sequences_-_city_hash_distribution.png)
+   - ![Jenkins Hash Distribution (DNA Sequences)](results/dna_sequences_-_jenkins_hash_distribution.png)
+   - ![Murmur Hash Distribution (DNA Sequences)](results/dna_sequences_-_murmur_hash_distribution.png)
 
 ### Additional Insights
 
