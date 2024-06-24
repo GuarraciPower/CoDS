@@ -166,7 +166,7 @@ This project demonstrates the implementation and analysis of a Bloom Filter, cov
 1. **False Positive Rate Analysis (Question 7)**:
    - **Graph**: The false positive rate as a function of the number of words inserted.
    - **Conclusion**: As expected, the false positive rate increases as the number of elements exceeds the designed capacity of the Bloom Filter. The hash functions performed consistently across different data types, but the rate of increase in false positives varied slightly depending on the data type.
-   - ![False Positive Rate for Bloom Filters (DNA Sequences)](path/to/DNA Sequences_bloom_filter_false_positive_rate.png)
+   - ![False Positive Rate for Bloom Filters (DNA Sequences)](results/false_positive_rate_over_time.png)
 
 2. **Compression Rate Analysis (Question 8)**:
    - **Graph 1**: Compression rate as a function of the expected number of false positives.
@@ -176,11 +176,11 @@ This project demonstrates the implementation and analysis of a Bloom Filter, cov
    - ![Compression Rate vs Observed False Positives](results/compression_rate_vs_observed_false_positives.png)
 
 3. **Performance Benchmarks**:
-   - **Graph 1**: Add time for different algorithms (DNA Sequences).
-   - **Graph 2**: Search time for different algorithms (DNA Sequences).
+   - **Graph 1**: Add time for different algorithms (Natural Language Words).
+   - **Graph 2**: Search time for different algorithms (Natural Language Words).
    - **Conclusion**: The Bloom Filter outperformed traditional data structures like linear search, BST, and AVL trees in terms of space efficiency and query speed, particularly as the dataset size increased. The hash functions showed consistent performance, with Murmur and CityHash being slightly more efficient in terms of distribution and speed.
-   - ![Add Time for Algorithms (DNA Sequences)](results/DNA%20Sequences_algorithms_add_time.png)
-   - ![Search Time for Algorithms (DNA Sequences)](results/DNA%20Sequences_algorithms_search_time.png)
+   - ![Add Time for Algorithms (DNA Sequences)](results/Natural%20Language%20Words_algorithms_add_time.png)
+   - ![Search Time for Algorithms (DNA Sequences)](results/Natural%20Language%20Words_algorithms_search_time.png)
 
 4. **Hash Function Performance**:
    - **Graph 1**: Hash distribution for CityHash (DNA Sequences).
