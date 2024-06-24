@@ -1,34 +1,58 @@
+import hashlib
+import mmh3
+import cityhash
+
+
 class HashFunctions:
     @staticmethod
-    def hash_int32_shift(input):
-        x = input
-        x = ~x + (x << 15)
-        x = x ^ (x >> 12)
-        x = x + (x << 2)
-        x = x ^ (x >> 4)
-        x = x * 2057
-        x = x ^ (x >> 16)
-        return x & 0xFFFFFFFF
+    def hash_int32_jenkins(key):
+        if isinstance(key, str):
+            key = key.encode('utf-8')
+        print("JenkinsHash input:", key)
+        hash_value = 0
+        for char in key:
+            hash_value += char
+            hash_value += (hash_value << 10)
+            hash_value ^= (hash_value >> 6)
+        hash_value += (hash_value << 3)
+        hash_value ^= (hash_value >> 11)
+        hash_value += (hash_value << 15)
+        return hash_value & 0xffffffff
 
     @staticmethod
-    def hash_int32_jenkins(input):
-        a = input
-        a = (a + 0x7ed55d16) + (a << 12)
-        a = (a ^ 0xc761c23c) ^ (a >> 19)
-        a = (a + 0x165667b1) + (a << 5)
-        a = (a + 0xd3a2646c) ^ (a << 9)
-        a = (a + 0xfd7046c5) + (a << 3)
-        a = (a ^ 0xb55a4f09) ^ (a >> 16)
-        return a & 0xFFFFFFFF
+    def hash_int32_shift(key):
+        if isinstance(key, str):
+            key = key.encode('utf-8')
+        print("ShiftHash input:", key)
+        hash_value = 0
+        for char in key:
+            hash_value = (hash_value << 5) - hash_value + char
+        return hash_value & 0xffffffff
 
     @staticmethod
-    def hash_string(input):
-        hash = 0
-        for i in range(len(input)):
-            hash += ord(input[i])
-            hash += (hash << 10)
-            hash ^= (hash >> 6)
-        hash += (hash << 3)
-        hash ^= (hash >> 11)
-        hash += (hash << 15)
-        return hash & 0xFFFFFFFF
+    def hash_murmur(key):
+        if isinstance(key, str):
+            key = key.encode('utf-8')
+        print("MurmurHash input:", key)
+        return mmh3.hash(key)
+
+    @staticmethod
+    def hash_city(key):
+        if isinstance(key, str):
+            key = key.encode('utf-8')
+        print("CityHash input:", key)
+        return cityhash.CityHash32(key)
+
+    @staticmethod
+    def hash_sha256(key):
+        if isinstance(key, str):
+            key = key.encode('utf-8')
+        print("SHA-256 input:", key)
+        return int(hashlib.sha256(key).hexdigest(), 16) % (1 << 32)
+
+    @staticmethod
+    def hash_string(item):
+        if isinstance(item, str):
+            item = item.encode('utf-8')
+        print("Hash String input:", item)
+        return int(hashlib.md5(item).hexdigest(), 16)

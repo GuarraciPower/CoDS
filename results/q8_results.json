@@ -1,0 +1,146 @@
+[
+    {
+        "capacity": 5000,
+        "error_rate": 0.001,
+        "compression_rate": 0.0023787332897464075,
+        "observed_false_positive_rate": 0.0
+    },
+    {
+        "capacity": 5000,
+        "error_rate": 0.01,
+        "compression_rate": 0.002378716744913928,
+        "observed_false_positive_rate": 0.0
+    },
+    {
+        "capacity": 10000,
+        "error_rate": 0.001,
+        "compression_rate": 0.001189358372456964,
+        "observed_false_positive_rate": 0.0
+    },
+    {
+        "capacity": 10000,
+        "error_rate": 0.01,
+        "compression_rate": 0.001189358372456964,
+        "observed_false_positive_rate": 0.0
+    },
+    {
+        "capacity": 20000,
+        "error_rate": 0.001,
+        "compression_rate": 0.0005946771181459985,
+        "observed_false_positive_rate": 0.0
+    },
+    {
+        "capacity": 20000,
+        "error_rate": 0.01,
+        "compression_rate": 0.0005946760841101507,
+        "observed_false_positive_rate": 0.0
+    },
+    {
+        "capacity": 5000,
+        "error_rate": 0.001,
+        "compression_rate": 0.7123958434765674,
+        "observed_false_positive_rate": 0.0432
+    },
+    {
+        "capacity": 5000,
+        "error_rate": 0.01,
+        "compression_rate": 0.7142618675013042,
+        "observed_false_positive_rate": 0.1367
+    },
+    {
+        "capacity": 10000,
+        "error_rate": 0.001,
+        "compression_rate": 0.4652547383063815,
+        "observed_false_positive_rate": 0.0009
+    },
+    {
+        "capacity": 10000,
+        "error_rate": 0.01,
+        "compression_rate": 0.4651017214397496,
+        "observed_false_positive_rate": 0.0108
+    },
+    {
+        "capacity": 20000,
+        "error_rate": 0.001,
+        "compression_rate": 0.2687766691821625,
+        "observed_false_positive_rate": 0.0
+    },
+    {
+        "capacity": 20000,
+        "error_rate": 0.01,
+        "compression_rate": 0.26901789766354894,
+        "observed_false_positive_rate": 0.0005
+    },
+    {
+        "capacity": 5000,
+        "error_rate": 0.001,
+        "compression_rate": 0.7133556832250616,
+        "observed_false_positive_rate": 0.0483
+    },
+    {
+        "capacity": 5000,
+        "error_rate": 0.01,
+        "compression_rate": 0.7137819509650496,
+        "observed_false_positive_rate": 0.1284
+    },
+    {
+        "capacity": 10000,
+        "error_rate": 0.001,
+        "compression_rate": 0.4636828377673448,
+        "observed_false_positive_rate": 0.0009
+    },
+    {
+        "capacity": 10000,
+        "error_rate": 0.01,
+        "compression_rate": 0.4649139280125196,
+        "observed_false_positive_rate": 0.0097
+    },
+    {
+        "capacity": 20000,
+        "error_rate": 0.001,
+        "compression_rate": 0.26801158750969395,
+        "observed_false_positive_rate": 0.0
+    },
+    {
+        "capacity": 20000,
+        "error_rate": 0.01,
+        "compression_rate": 0.2684753861482204,
+        "observed_false_positive_rate": 0.0001
+    },
+    {
+        "capacity": 5000,
+        "error_rate": 0.001,
+        "compression_rate": 0.7130635580842155,
+        "observed_false_positive_rate": 0.0451
+    },
+    {
+        "capacity": 5000,
+        "error_rate": 0.01,
+        "compression_rate": 0.7140740740740741,
+        "observed_false_positive_rate": 0.1286
+    },
+    {
+        "capacity": 10000,
+        "error_rate": 0.001,
+        "compression_rate": 0.464566162406538,
+        "observed_false_positive_rate": 0.0008
+    },
+    {
+        "capacity": 10000,
+        "error_rate": 0.01,
+        "compression_rate": 0.46469483568075115,
+        "observed_false_positive_rate": 0.0115
+    },
+    {
+        "capacity": 20000,
+        "error_rate": 0.001,
+        "compression_rate": 0.2684393377174832,
+        "observed_false_positive_rate": 0.0
+    },
+    {
+        "capacity": 20000,
+        "error_rate": 0.01,
+        "compression_rate": 0.26866317859583416,
+        "observed_false_positive_rate": 0.0003
+    }
+]

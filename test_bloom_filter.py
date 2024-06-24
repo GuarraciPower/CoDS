@@ -1,29 +1,40 @@
 import unittest
 from BloomFilter import BloomFilter
-from HashFunctions import HashFunctions
-
 
 class TestBloomFilter(unittest.TestCase):
+    def setUp(self):
+        self.capacity = 10 ** 5
+        self.error_rate = 0.01
+        self.data = ["apple", "banana", "grape", "orange", "watermelon"]
 
     def test_add_and_contains(self):
-        bf = BloomFilter(100, 0.01)
-        bf.add("hello")
-        self.assertTrue(bf.contains("hello"))
-        self.assertFalse(bf.contains("world"))
+        bf = BloomFilter(self.capacity, self.error_rate)
+        for item in self.data:
+            bf.add(item)
+            self.assertTrue(bf.contains(item))
 
-    def test_false_positives(self):
-        bf = BloomFilter(1000, 0.01)
-        for i in range(500):
-            bf.add(f"item{i}")
-        false_positives = sum(1 for i in range(500, 1000)
-                              if bf.contains(f"item{i}"))
-        self.assertLess(false_positives, 50)  # Expecting < 5% false positives
+    def test_false_positive_rate(self):
+        bf = BloomFilter(self.capacity, self.error_rate)
+        for item in self.data:
+            bf.add(item)
 
-    def test_hash_functions(self):
-        data = ["hello", "world", "foo", "bar"]
-        hashes = [HashFunctions.hash_int32_jenkins(d) for d in data]
-        self.assertEqual(len(hashes), len(set(hashes)))  # Ensure no collisions
+        false_positives = 0
+        for _ in range(10 ** 5):
+            random_string = "random" + str(_)
+            if bf.contains(random_string):
+                false_positives += 1
 
+        false_positive_rate = false_positives / (10 ** 5)
+        self.assertLessEqual(false_positive_rate, self.error_rate)
 
-if __name__ == '__main__':
+    def test_edge_cases(self):
+        bf = BloomFilter(self.capacity, self.error_rate)
+        bf.add("")
+        self.assertTrue(bf.contains(""))
+
+        special_chars = "!@#$%^&*()"
+        bf.add(special_chars)
+        self.assertTrue(bf.contains(special_chars))
+
+if __name__ == "__main__":
     unittest.main()

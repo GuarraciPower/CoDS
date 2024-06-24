@@ -1,0 +1,68 @@
+{
+    "Natural Language Words": {
+        "Jenkins": {
+            "execution_time": 0.5853590965270996,
+            "collisions": 9981
+        },
+        "Shift": {
+            "execution_time": 0.3197953701019287,
+            "collisions": 9981
+        },
+        "Murmur": {
+            "execution_time": 0.19162487983703613,
+            "collisions": 9981
+        },
+        "City": {
+            "execution_time": 0.22621822357177734,
+            "collisions": 9981
+        },
+        "SHA256": {
+            "execution_time": 0.2779552936553955,
+            "collisions": 9981
+        }
+    },
+    "Random Strings": {
+        "Jenkins": {
+            "execution_time": 0.5203304290771484,
+            "collisions": 0
+        },
+        "Shift": {
+            "execution_time": 0.5943999290466309,
+            "collisions": 0
+        },
+        "Murmur": {
+            "execution_time": 0.34829020500183105,
+            "collisions": 0
+        },
+        "City": {
+            "execution_time": 0.3369100093841553,
+            "collisions": 0
+        },
+        "SHA256": {
+            "execution_time": 0.28507518768310547,
+            "collisions": 0
+        }
+    },
+    "DNA Sequences": {
+        "Jenkins": {
+            "execution_time": 0.26407337188720703,
+            "collisions": 39
+        },
+        "Shift": {
+            "execution_time": 0.21329069137573242,
+            "collisions": 39
+        },
+        "Murmur": {
+            "execution_time": 0.2367238998413086,
+            "collisions": 39
+        },
+        "City": {
+            "execution_time": 0.2116408348083496,
+            "collisions": 39
+        },
+        "SHA256": {
+            "execution_time": 0.5018846988677979,
+            "collisions": 39
+        }
+    }
+}
